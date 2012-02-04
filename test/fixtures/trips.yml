@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Date: 2012-02-03
+  address: MyString
+  school: MyString
+  start_time: 2012-02-03 20:50:52
+  distance_from_home: 1
+  travel_time: 1
+  departure_time: 2012-02-03 20:50:52
+  distance_from_school_to_office: 1
+  time_from_school_to_office: 1
+  distance_from_home_to_office: 1
+  time_to_home: 1
+  current_gas_price: 9.99
+  trip_gas_total: 9.99
+  end_of_business: 2012-02-03 20:50:52
+  position: MyString
+  total_business_time: 1
+  hourly_rate: 9.99
+  business_time: 1
+
+two:
+  Date: 2012-02-03
+  address: MyString
+  school: MyString
+  start_time: 2012-02-03 20:50:52
+  distance_from_home: 1
+  travel_time: 1
+  departure_time: 2012-02-03 20:50:52
+  distance_from_school_to_office: 1
+  time_from_school_to_office: 1
+  distance_from_home_to_office: 1
+  time_to_home: 1
+  current_gas_price: 9.99
+  trip_gas_total: 9.99
+  end_of_business: 2012-02-03 20:50:52
+  position: MyString
+  total_business_time: 1
+  hourly_rate: 9.99
+  business_time: 1

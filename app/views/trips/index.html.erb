@@ -1,0 +1,57 @@
+<h1>Listing trips</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Address</th>
+    <th>School</th>
+    <th>Start time</th>
+    <th>Distance from home</th>
+    <th>Travel time</th>
+    <th>Departure time</th>
+    <th>Distance from school to office</th>
+    <th>Time from school to office</th>
+    <th>Distance from home to office</th>
+    <th>Time to home</th>
+    <th>Current gas price</th>
+    <th>Trip gas total</th>
+    <th>End of business</th>
+    <th>Position</th>
+    <th>Total business time</th>
+    <th>Hourly rate</th>
+    <th>Business time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @trips.each do |trip| %>
+  <tr>
+    <td><%= trip.Date %></td>
+    <td><%= trip.address %></td>
+    <td><%= trip.school %></td>
+    <td><%= trip.start_time %></td>
+    <td><%= trip.distance_from_home %></td>
+    <td><%= trip.travel_time %></td>
+    <td><%= trip.departure_time %></td>
+    <td><%= trip.distance_from_school_to_office %></td>
+    <td><%= trip.time_from_school_to_office %></td>
+    <td><%= trip.distance_from_home_to_office %></td>
+    <td><%= trip.time_to_home %></td>
+    <td><%= trip.current_gas_price %></td>
+    <td><%= trip.trip_gas_total %></td>
+    <td><%= trip.end_of_business %></td>
+    <td><%= trip.position %></td>
+    <td><%= trip.total_business_time %></td>
+    <td><%= trip.hourly_rate %></td>
+    <td><%= trip.business_time %></td>
+    <td><%= link_to 'Show', trip %></td>
+    <td><%= link_to 'Edit', edit_trip_path(trip) %></td>
+    <td><%= link_to 'Destroy', trip, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Trip', new_trip_path %>

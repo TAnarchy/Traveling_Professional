@@ -1,0 +1,95 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @trip.Date %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @trip.address %>
+</p>
+
+<p>
+  <b>School:</b>
+  <%= @trip.school %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%= @trip.start_time %>
+</p>
+
+<p>
+  <b>Distance from home:</b>
+  <%= @trip.distance_from_home %>
+</p>
+
+<p>
+  <b>Travel time:</b>
+  <%= @trip.travel_time %>
+</p>
+
+<p>
+  <b>Departure time:</b>
+  <%= @trip.departure_time %>
+</p>
+
+<p>
+  <b>Distance from school to office:</b>
+  <%= @trip.distance_from_school_to_office %>
+</p>
+
+<p>
+  <b>Time from school to office:</b>
+  <%= @trip.time_from_school_to_office %>
+</p>
+
+<p>
+  <b>Distance from home to office:</b>
+  <%= @trip.distance_from_home_to_office %>
+</p>
+
+<p>
+  <b>Time to home:</b>
+  <%= @trip.time_to_home %>
+</p>
+
+<p>
+  <b>Current gas price:</b>
+  <%= @trip.current_gas_price %>
+</p>
+
+<p>
+  <b>Trip gas total:</b>
+  <%= @trip.trip_gas_total %>
+</p>
+
+<p>
+  <b>End of business:</b>
+  <%= @trip.end_of_business %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @trip.position %>
+</p>
+
+<p>
+  <b>Total business time:</b>
+  <%= @trip.total_business_time %>
+</p>
+
+<p>
+  <b>Hourly rate:</b>
+  <%= @trip.hourly_rate %>
+</p>
+
+<p>
+  <b>Business time:</b>
+  <%= @trip.business_time %>
+</p>
+
+
+<%= link_to 'Edit', edit_trip_path(@trip) %> |
+<%= link_to 'Back', trips_path %>

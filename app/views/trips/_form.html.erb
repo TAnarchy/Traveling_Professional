@@ -1,0 +1,89 @@
+<%= form_for(@trip) do |f| %>
+  <% if @trip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trip.errors.count, "error") %> prohibited this trip from being saved:</h2>
+
+      <ul>
+      <% @trip.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Date %><br />
+    <%= f.date_select :Date %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :school %><br />
+    <%= f.text_field :school %>
+  </div>
+  <div class="field">
+    <%= f.label :start_time %><br />
+    <%= f.time_select :start_time %>
+  </div>
+  <div class="field">
+    <%= f.label :distance_from_home %><br />
+    <%= f.number_field :distance_from_home %>
+  </div>
+  <div class="field">
+    <%= f.label :travel_time %><br />
+    <%= f.number_field :travel_time %>
+  </div>
+  <div class="field">
+    <%= f.label :departure_time %><br />
+    <%= f.time_select :departure_time %>
+  </div>
+  <div class="field">
+    <%= f.label :distance_from_school_to_office %><br />
+    <%= f.number_field :distance_from_school_to_office %>
+  </div>
+  <div class="field">
+    <%= f.label :time_from_school_to_office %><br />
+    <%= f.number_field :time_from_school_to_office %>
+  </div>
+  <div class="field">
+    <%= f.label :distance_from_home_to_office %><br />
+    <%= f.number_field :distance_from_home_to_office %>
+  </div>
+  <div class="field">
+    <%= f.label :time_to_home %><br />
+    <%= f.number_field :time_to_home %>
+  </div>
+  <div class="field">
+    <%= f.label :current_gas_price %><br />
+    <%= f.text_field :current_gas_price %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_gas_total %><br />
+    <%= f.text_field :trip_gas_total %>
+  </div>
+  <div class="field">
+    <%= f.label :end_of_business %><br />
+    <%= f.time_select :end_of_business %>
+  </div>
+  <div class="field">
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :total_business_time %><br />
+    <%= f.number_field :total_business_time %>
+  </div>
+  <div class="field">
+    <%= f.label :hourly_rate %><br />
+    <%= f.text_field :hourly_rate %>
+  </div>
+  <div class="field">
+    <%= f.label :business_time %><br />
+    <%= f.number_field :business_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
